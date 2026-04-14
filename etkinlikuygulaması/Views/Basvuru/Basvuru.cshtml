@@ -1,0 +1,33 @@
+﻿@model EtkinlikUygulamasi.Models.Basvuru
+
+<div class="d-flex justify-content-center align-items-center" style="min-height:80vh;">
+    <div class="card p-4" style="width: 350px;">
+        <h3 class="text-center mb-3">Başvuru Formu</h3>
+
+        <form asp-action="Basvuru" method="post">
+            <div class="mb-2">
+                <input asp-for="Ad" class="form-control" placeholder="Ad" />
+                <span asp-validation-for="Ad" class="text-danger"></span>
+            </div>
+            <div class="mb-2">
+                <input asp-for="Soyad" class="form-control" placeholder="Soyad" />
+                <span asp-validation-for="Soyad" class="text-danger"></span>
+            </div>
+            <div class="mb-2">
+                <input asp-for="Eposta" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Eposta" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input asp-for="TC" class="form-control" placeholder="TC Kimlik No" />
+                <span asp-validation-for="TC" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Başvur</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

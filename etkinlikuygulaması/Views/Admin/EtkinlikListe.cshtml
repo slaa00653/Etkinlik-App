@@ -1,0 +1,63 @@
+﻿@model List<etkinlikuygulaması.Models.Etkinlik>
+
+@{
+    ViewData["Title"] = "Etkinlik Listesi";
+}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+    <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand" href="#">Etkinlik Takip</a>
+        <div>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-3">
+                    <a class="nav-link active" href="/Home/index">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Admin/Login">Admin Giriş</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h2>Etkinlik Listesi</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Kategori</th>
+            <th>Konum</th>
+            <th>Ücret</th>
+            <th>Kontenjan</th>
+            <th>Doküman</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var etkinlik in Model)
+        {
+            <tr>
+                <td>@etkinlik.Ad</td>
+                <td>@etkinlik.Kategori</td>
+                <td>@etkinlik.Konum</td>
+                <td>@etkinlik.Ucret</td>
+                <td>@etkinlik.Kontenjan</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(etkinlik.DokumanYolu))
+                    {
+                        <img src="@etkinlik.DokumanYolu" width="100" />
+                    }
+                    else
+                    {
+                        <span>Yok</span>
+                    }
+                </td>
+                <td>
+                    <form asp-action="EtkinlikSil" method="post">
+                        <input type="hidden" name="id" value="@etkinlik.Id" />
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

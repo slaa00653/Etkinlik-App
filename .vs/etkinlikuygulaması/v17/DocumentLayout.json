@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\views\\admin\\etkinlikliste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\views\\admin\\etkinlikliste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\controllers\\basvurucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\controllers\\basvurucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\views\\basvuru\\basvuru.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\views\\basvuru\\basvuru.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|c:\\users\\hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{498C631F-FB42-4010-9280-A34B8792D587}|etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131.csproj|solutionrelative:etkinlikuygulamas\u0131\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 223,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAADcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T07:18:06.605Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\appsettings.json",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\appsettings.json",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T19:08:43.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-27T14:05:48.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EtkinlikListe.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Admin\\EtkinlikListe.cshtml",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Views\\Admin\\EtkinlikListe.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Admin\\EtkinlikListe.cshtml",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Views\\Admin\\EtkinlikListe.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T08:45:54.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T06:05:41.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BasvuruController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Controllers\\BasvuruController.cs",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Controllers\\BasvuruController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Controllers\\BasvuruController.cs",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Controllers\\BasvuruController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T06:05:18.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T05:59:24.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Basvuru.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Basvuru\\Basvuru.cshtml",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Views\\Basvuru\\Basvuru.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Views\\Basvuru\\Basvuru.cshtml",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Views\\Basvuru\\Basvuru.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T09:33:11.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T13:18:11.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T05:59:34.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "etkinlikuygulamas\u0131\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\etkinlikuygulamas\u0131\\etkinlikuygulamas\u0131\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "etkinlikuygulamas\u0131\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-12T15:33:02.305Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

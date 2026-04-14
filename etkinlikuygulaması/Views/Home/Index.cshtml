@@ -1,0 +1,226 @@
+﻿@using etkinlikuygulaması.Data
+@model List<etkinlikuygulaması.Models.Etkinlik>
+
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">EtkinlikNoktası</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Anasayfa</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Admin/Login">Admin Giriş</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+@{
+    var mesaj = TempData["BasvuruMesaj"] as string;
+}
+<div class="hero">
+    @if (!string.IsNullOrEmpty(mesaj))
+    {
+        <div id="basvuruMesaj" class="alert alert-success text-center" role="alert">
+            @mesaj
+        </div>
+
+        <script>
+            // 5 saniye sonra mesajı kaybolur
+            setTimeout(function() {
+                var mesajDiv = document.getElementById('basvuruMesaj');
+                if (mesajDiv) {
+                    mesajDiv.style.transition = "opacity 0.5s ease";
+                    mesajDiv.style.opacity = "0";
+                    setTimeout(function() { mesajDiv.remove(); }, 300); // fade sonrası tamamen kaldır
+                }
+            }, 3000); // 5000 ms = 5 saniye
+        </script>
+    }
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var etkinlik in Model)
+        {
+            <div class="col-md-3 mb-3">
+                <div class="event-card" style="background-image: url('@etkinlik.DokumanYolu');">
+                    <div class="event-content">
+                        <h5 class="event-title">@etkinlik.Ad</h5>
+                       
+                           
+
+                        <button class="btn join-button" data-bs-toggle="modal"
+                                data-bs-target="#etkinlikModal"
+                                data-ad="@etkinlik.Ad"
+                                data-kategori="@etkinlik.Kategori"
+                                data-ucret="@etkinlik.Ucret"
+                                data-konum="@etkinlik.Konum"
+                                data-tarih="@etkinlik.Kontenjan">
+                            Ayrıntı
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+
+<style>
+    .event-card {
+        position: relative;
+        width: 300px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        color: white;
+        box-shadow: 0 4px 20px rgba(120, 20, 0, 0.3);
+        transition: transform 0.3s;
+        justify-content: space-between;
+    }
+
+        .event-card:hover {
+            transform: scale(1.02); /* yakınlaşma efektini yaptım burda*/
+        }
+
+    .event-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .event-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .join-button {
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        transition: 0.3s;
+        background-color: rgba(0,0,0,0.5);
+    }
+</style>
+
+<div class="modal fade" id="etkinlikModal" tabindex="-1" aria-labelledby="etkinlikModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="etkinlikModalLabel">Etkinlik Ayrıntıları</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Ad:</strong> <span id="modalAd"></span></p>
+                <p><strong>Tarih:</strong> <span id="modalTarih"></span></p>
+                <p><strong>Ücret:</strong> <span id="modalUcret"></span></p>
+                <p><strong>Kategori:</strong> <span id="modalKategori"></span></p>
+                <p><strong>Konum:</strong> <span id="modalKonum"></span></p>
+
+                <div id="map" style="height: 300px; width: 100%;"></div>
+                <a asp-controller="Basvuru" asp-action="Basvuru">
+                    <button class="btn btn-success">Hemen Başvur</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Leaflet CSS & JS CDN -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-sA+e2HNPccX1jh4nWurA3vsPtPBDm39z2dd5m5/kb0M=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-o9N1j7kPPtW1r7vgo8nT2PdIHtmNn7FutS3pr6Gq6nk=" crossorigin=""></script>
+
+<!-- Bootstrap JS (Popper dahil) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var map;  // global harita objesi
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var etkinlikModal = document.getElementById('etkinlikModal');
+
+        etkinlikModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+
+            var ad = button.getAttribute('data-ad');
+            var tarih = button.getAttribute('data-tarih');
+            var ucret = button.getAttribute('data-ucret');
+            var konum = button.getAttribute('data-konum');
+            var kategori = button.getAttribute('data-kategori');
+
+            document.getElementById('modalAd').textContent = ad;
+            document.getElementById('modalTarih').textContent = tarih;
+            document.getElementById('modalUcret').textContent = ucret;
+            document.getElementById('modalKategori').textContent = kategori;
+             document.getElementById('modalKonum').textContent = konum;
+            // Önce varsa haritayı kaldır
+            if (map) {
+                map.remove();
+                map = null;
+            }
+            document.getElementById('map').innerHTML = "";
+
+            // Nominatim API ile adresi enlem/boylama çevir
+            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(konum)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.length > 0) {
+                        var lat = parseFloat(data[0].lat);
+                        var lon = parseFloat(data[0].lon);
+
+                        // Haritayı modal tam açıldıktan sonra oluştur
+                        etkinlikModal.addEventListener('shown.bs.modal', function () {
+                            map = L.map('map').setView([lat, lon], 13);
+
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                attribution: '© OpenStreetMap contributors'
+                            }).addTo(map);
+
+                            L.marker([lat, lon]).addTo(map).bindPopup(ad).openPopup();
+
+                            setTimeout(() => {
+                                map.invalidateSize();
+                            }, 300);
+                        }, { once: true });
+
+                    } else {
+                        document.getElementById('map').innerHTML = "<p>Konum bulunamadı.</p>";
+                    }
+                })
+                .catch(err => {
+                    console.error('Geocoding hatası:', err);
+                    document.getElementById('map').innerHTML = "<p>Konum yüklenirken hata oluştu.</p>";
+                });
+        });
+
+        // Modal kapandığında haritayı kaldır
+        etkinlikModal.addEventListener('hidden.bs.modal', function () {
+            if (map) {
+                map.remove();
+                map = null;
+            }
+            document.getElementById('map').innerHTML = "";
+        });
+
+
+    });
+</script>

@@ -1,0 +1,154 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.hero {
+    height: 500px;
+    background-image: url("/dokumanlar/resim1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background-position: center;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.custom-navbar {
+    background-color:darkolivegreen;
+    background-size: 400% 400%;
+   
+    color: white;
+    z-index: 1000;
+}
+
+
+<style >
+<html lang="tr" >
+<head > 
+
+<meta charset="UTF-8" / >
+<title > Track Event ve Arama</title >
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" / >
+<style >
+body {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    background: linear-gradient(90deg, #23d5ab, #ee7752, #e73c7e, #23a6d5);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 8s ease infinite;
+    margin: 0;
+    position: relative;
+    top: -30px;
+}
+
+
+
+
+</style >
+
+</head >
+<body >
+
+<h1 > Track Event</h1 >
+
+<div class="search-container" >
+<input type="text" placeholder="Etkinlik ara..." class="search-input" / >
+<button class="search-button" > Ara</button >
+</div >
+.event-card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}
+
+.event-info {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 15px;
+}
+
+.event-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.event-location {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.event-tag {
+    background-color: #00cc66;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 8px;
+}
+</body >
+</html >
